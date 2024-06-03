@@ -1,0 +1,25 @@
+﻿<Window x:Class="MySet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MySet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBox x:Name="txtElement" Margin="0 0 0 5"/>
+            <Button Content="Добавить элемент" Click="AddElement_Click" Margin="0 0 5 0"/>
+            <Button Content="Удалить элемент" Click="RemoveElement_Click" Margin="0 0 5 0"/>
+            <Button Content="Очистить все элементы" Click="ClearSet_Click" Margin="0 0 5 0"/>
+            <Button Content="Получить массив элементов" Click="GetArray_Click" Margin="0 0 5 0"/>
+            <TextBlock x:Name="txtSetContent"/>
+            <TextBlock x:Name="txtCount"/>
+            <TextBlock x:Name="txtIsEmpty"/>
+            <TextBlock x:Name="txtArray"/>
+            <TextBox x:Name="txtCheckElement" Margin="0 0 5 0"/>
+            <Button Content="Проверить наличие элемента" Click="CheckElement_Click" Margin="0 0 5 0"/>
+            <TextBlock x:Name="txtContains"/>      
+        </StackPanel>
+    </Grid>
+</Window>
